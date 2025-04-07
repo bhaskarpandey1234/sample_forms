@@ -1,0 +1,102 @@
+.signup-box {
+    top: 0px;
+    left: 0px;
+    min-width: 100vw;
+    min-height: 100vh;
+    /* width: 375px;
+    height: 812px; */
+    background: #f7f8f9 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .signup-container {
+    position: absolute;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 30px;
+    max-height: 100%
+  }
+  .signup-container h2 {
+    text-align: left;
+    font: normal normal medium 28px/36px Rubik;
+    letter-spacing: 0px;
+    color: #1d2226;
+    opacity: 1;
+    margin-bottom: 10px;
+    max-width: 70%;
+    font-size: 28px;
+    /* text-align: justify; */
+  font-family: 'Rubik',sans-serif;
+  }
+  .signup-container form button{
+    /* background: #6c25ff4b 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-bottom: 10px; */
+    background: #6C25FF 0% 0% no-repeat padding-box;
+border-radius: 6px;
+opacity: 1;
+  width: 80%;
+  margin-top: 50%;
+  margin-bottom: 10%;
+  padding: 10px;
+  box-sizing: border-box;
+  color: white;
+  border: 1px solid #cbcbcb;
+  }
+  .signup-container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap:10px;
+    position: relative;
+  }
+  .signup-container form label {
+    text-align: left;
+    font: normal normal normal 13px/17px Rubik;
+    letter-spacing: 0px;
+    color: #6c25ff;
+    opacity: 1;
+    position: relative;
+    top: 18px;
+    left: 5px;
+    font-size: 14px;
+    background: #f7f8f9;
+    padding: 0 5px;
+    width: 50%;
+  }
+  .signup-container form input {
+    width: 80%;
+    background: #f7f8f9;
+    border: 1px solid #cbcbcb;
+    border-radius: 6px;
+    opacity: 1;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .signup-container form .agency{
+    margin-top: -10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .signup-container form .agency label{
+    position: relative;
+    top: 0px;
+  }
+  .agency label {
+    margin-right:15px; /* Remove default margin to keep labels aligned with inputs */
+    /* font-size: 16px; Optional: Adjust font size */
+  }
+  
+  .agency input[type="radio"] {
+    margin: 0 5px; /* Optional: Adjust space around the radio buttons */
+    transform: scale(1.5);
+}
