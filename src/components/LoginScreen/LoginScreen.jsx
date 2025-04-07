@@ -1,7 +1,13 @@
 import React from 'react'
 import './LoginScreen.css'
+import { useNavigate } from 'react-router-dom'
 
 const LoginScreen = () => {
+  const navigateToLogin=useNavigate();
+  const handleLogin=()=>{
+    navigateToLogin('/profile');
+  }
+
   return (
     <div className='login-box'>
         <div className="login-container">
@@ -13,7 +19,7 @@ const LoginScreen = () => {
             <input type="email" id='email' placeholder='Enter email address'/>
             <label htmlFor="password">Password</label>
             <input type="password" id='password' placeholder='Enter password'/>
-            <button type='submit' className='ar'>Login</button>
+            <button onClick={handleLogin} type='submit' className='ar'>Login</button>
         </form>
 
         </div>

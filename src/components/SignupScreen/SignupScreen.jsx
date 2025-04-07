@@ -1,7 +1,12 @@
 import React from "react";
 import "./SignupScreen.css";
+import { useNavigate } from "react-router-dom";
 
 const SignupScreen = () => {
+  const navigateToLogin=useNavigate();
+  const handleLogin=()=>{
+    navigateToLogin('/profile');
+  }
   return (
     <div className="signup-box">
       <div className="signup-container">
@@ -50,7 +55,7 @@ const SignupScreen = () => {
             <label htmlFor="no">No</label>
           </div>
 
-          <button type="submit" className="ar">
+          <button onClick={handleLogin} type="submit" className="ar">
             Create Account
           </button>
         </form>
